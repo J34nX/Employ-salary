@@ -1,0 +1,16 @@
+D:\Codes\C#\Employ\Employ\bin\Release\net8.0-windows\Employ.exe
+D:\Codes\C#\Employ\Employ\bin\Release\net8.0-windows\Employ.deps.json
+D:\Codes\C#\Employ\Employ\bin\Release\net8.0-windows\Employ.runtimeconfig.json
+D:\Codes\C#\Employ\Employ\bin\Release\net8.0-windows\Employ.dll
+D:\Codes\C#\Employ\Employ\bin\Release\net8.0-windows\Employ.pdb
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.Form1.resources
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.csproj.GenerateResource.cache
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.AssemblyInfoInputs.cache
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.AssemblyInfo.cs
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.csproj.CoreCompileInputs.cache
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.dll
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\refint\Employ.dll
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.pdb
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\Employ.genruntimeconfig.cache
+D:\Codes\C#\Employ\Employ\obj\Release\net8.0-windows\ref\Employ.dll
