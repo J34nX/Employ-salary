@@ -71,34 +71,56 @@ namespace Employ
             get { return this.salary; }
             set { this.salary = value; }
         }
+        // need to para ma check yung sa (pag meron numbers sa name at jobstite)
+        private bool Havnum(string input)
+        {
+            return input.Any(char.IsDigit);
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string invalidMessage = "Please complete your data.";
-            double parsedHour, parsedSalary;
+            string invalidInputMessage = "Names and job titles cannot contain numbers";
+            string invalidHoursMessage = "Work hours and rate per hour Invalid";
+            double parsedHour;
 
-           
             Firstname = FnameTB.Text;
             Lastname = LnameTB.Text;
             jobtitle = JobtitetB.Text;
             department = DepartTB.Text;
 
-            
-            if (double.TryParse(ratehrTB.Text, out parsedHour) && int.TryParse(WhrTB.Text, out workhr))
-            {
-                hour = parsedHour;
-                
-                salary = workhr * hour;
-
-                
-                FnameLB.Text = Firstname;
-                LnameLB.Text = Lastname;
-                BasicSTB.Text = salary.ToString("F2");
-            }
-            else
+            // Pagwala input sa text box
+            if (string.IsNullOrWhiteSpace(Firstname) ||
+                string.IsNullOrWhiteSpace(Lastname) ||
+                string.IsNullOrWhiteSpace(jobtitle) ||
+                string.IsNullOrWhiteSpace(department))
             {
                 MessageBox.Show(invalidMessage);
+                return;
             }
+
+            // pag meron numbers sa name at jobstite
+            if (Havnum(Firstname) || Havnum(Lastname) || Havnum(jobtitle) || Havnum(department))
+            {
+                MessageBox.Show(invalidInputMessage);
+                return;
+            }
+
+            // pag meron na letters sa work hr at sa rate
+            if (!double.TryParse(ratehrTB.Text, out parsedHour) || !int.TryParse(WhrTB.Text, out workhr))
+            {
+                MessageBox.Show(invalidHoursMessage);
+                return;
+            }
+
+          
+            hour = parsedHour;
+            salary = workhr * hour;
+
+            FnameLB.Text = Firstname;
+            LnameLB.Text = Lastname;
+            BasicSTB.Text = salary.ToString("F2");
+
         }
 
         private void FnameLB_Click(object sender, EventArgs e)
